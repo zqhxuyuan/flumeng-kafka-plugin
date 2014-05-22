@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 /**
  * The type Single partition.
  */
-public class SinglePartition implements Partitioner<String> {
+public class SinglePartition implements Partitioner {
     // - [ constant fields ] ----------------------------------------
 
     /**
@@ -43,7 +43,7 @@ public class SinglePartition implements Partitioner<String> {
      * @return the int
      */
     @Override
-    public int partition(String key, int numberOfPartions) {
+    public int partition(Object key, int numberOfPartions) {
         return 0;
     }
 
